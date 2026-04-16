@@ -1,4 +1,4 @@
-# 🌾 TaniPintar - Website
+# 🌾TaniPintar
 
 <div align="center">
   

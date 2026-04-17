@@ -1,8 +1,6 @@
 # 🌾TaniPintar
 
 <div align="center">
-  
-![SmartFarm Connect Logo](bia-smartfarm-web/src/assets/images/logo.png)
 
 ### 🚀 Membangun Masa Depan Pertanian Indonesia
 

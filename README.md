@@ -1,128 +1,81 @@
-# 🌾TaniPintar
+# TaniPintar
 
-<div align="center">
+TaniPintar adalah platform ekosistem digital terintegrasi yang menghubungkan petani, pembeli, dan pemangku kepentingan untuk meningkatkan efisiensi dan keberlanjutan sektor pertanian di Indonesia.
 
-### 🚀 Membangun Masa Depan Pertanian Indonesia
+## Fitur Utama
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/OwlDane/TaniPintar-web)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![React](https://img.shields.io/badge/React-18.x-61DAFB.svg)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-14.x-339933.svg)](https://nodejs.org/)
+### 1. Visualisasi Data & Pemetaan
+* **Interactive Mapping:** Pemetaan lokasi petani menggunakan Leaflet.js dengan fitur filter berbasis komoditas dan status panen.
+* **Real-time Statistics:** Dasbor sebaran komoditas untuk memantau ketersediaan stok di berbagai wilayah.
 
----
+### 2. Manajemen Komoditas & Harga
+* **Digital Catalog:** Inventarisasi produk pertanian dengan klasifikasi organik dan non-organik.
+* **Dynamic Pricing:** Informasi harga pasar terkini untuk menjaga transparansi transaksi.
 
-TaniPintar adalah platform inovatif yang memadukan teknologi modern dengan kearifan pertanian lokal. Kami menghubungkan petani, pembeli, dan pemangku kepentingan dalam satu ekosistem digital yang terintegrasi untuk membangun masa depan pertanian Indonesia yang lebih baik dan berkelanjutan.
+### 3. Panel Administrasi & Analitik
+* **Data Analytics:** Pengolahan data pertanian untuk menghasilkan *insight* bagi pengambilan keputusan.
+* **Content Management:** Pengelolaan modul edukasi dan artikel pertanian modern.
 
-[🌐 Website](https://tanipintar.id) • [📚 Dokumentasi](docs/) • [🤝 Kontribusi](CONTRIBUTING.md) • [📫 Kontak](mailto:info@tanipintar.id)
+### 4. Learning Center
+* **Educational Resources:** Perpustakaan digital dan tutorial video mengenai teknik bertani modern.
+* **Discussion Forum:** Media kolaborasi dan pertukaran informasi antar pengguna.
 
-</div>
+## Tech Stack
 
-## ✨ Fitur Unggulan
+### Frontend
+* **Core:** React 18 (Hooks & Functional Components)
+* **Styling:** Tailwind CSS
+* **State Management:** Redux Toolkit & React Query
+* **Mapping:** Leaflet.js
+* **Routing:** React Router 6
 
-### 🗺️ Pemetaan Interaktif
-- **Smart Mapping**: Visualisasi lokasi petani dengan peta interaktif Leaflet.js
-- **Filter Pintar**: Pencarian berdasarkan komoditas, jarak, dan status panen
-- **Profil Detail**: Informasi lengkap setiap petani termasuk rating dan ulasan
-- **Statistik Real-time**: Data sebaran petani dan komoditas terupdate
+### Backend
+* **Runtime:** Node.js
+* **Framework:** Express.js
+* **Database:** MariaDB (Relational Database)
+* **Authentication:** JSON Web Token (JWT)
+* **Real-time:** Socket.io
 
-### 📱 Panel Admin
-- **Dashboard Intuitif**: Monitoring aktivitas platform secara real-time
-- **Manajemen Konten**: Kelola artikel edukasi dan informasi pertanian
-- **Data Analytics**: Insight pertanian berbasis data
-- **User Management**: Kelola akses dan peran pengguna
+## Struktur Proyek (Frontend)
 
-### 🌾 Manajemen Komoditas
-- **Katalog Digital**: Informasi detail setiap komoditas pertanian
-- **Update Status**: Pembaruan status panen secara real-time
-- **Sistem Kategori**: Pengelompokan produk (organik/non-organik)
-- **Harga Dinamis**: Informasi harga pasar terkini
+* `src/components`: Komponen UI yang dapat digunakan kembali.
+* `src/pages`: Representasi halaman utama (Home, Map, Dashboard).
+* `src/store`: Konfigurasi Redux untuk manajemen state global.
+* `src/hooks`: Custom hooks untuk abstraksi logika bisnis.
+* `src/services`: Integrasi API dan penanganan data fetching.
 
-### 👨‍🌾 Fitur Edukasi
-- **Learning Center**: Pusat pembelajaran pertanian modern
-- **Video Tutorial**: Panduan visual teknik bertani
-- **Forum Diskusi**: Ruang berbagi pengalaman antar petani
-- **Resource Center**: Perpustakaan digital pertanian
-
-## 🛠️ Tech Stack
-
-1. **Beranda (Home)**
-   - Banner besar dengan tagline dan ilustrasi pertanian pintar
-   - Deskripsi singkat tentang SmartFarm Connect
-   - Fitur-fitur utama aplikasi
-   - Statistik pengguna
-   - Call-to-action buttons
-
-2. **Peta Sebaran**
-   - Peta interaktif menggunakan Leaflet.js
-   - Marker untuk lokasi petani
-   - Filter berdasarkan komoditas
-   - Popup profil petani
-   - Statistik sebaran
-
-3. **Kontak**
-   - Formulir kontak
-   - Informasi kontak alternatif
-   - FAQ
-
-### 🎯 Teknologi Frontend
-- **React 18.x**: Framework JavaScript modern untuk UI yang responsif
-- **Tailwind CSS**: Utility-first CSS framework untuk desain modern
-- **React Router 6**: Manajemen routing yang powerful
-- **Leaflet.js**: Library peta interaktif untuk visualisasi data
-- **Redux Toolkit**: State management yang efisien
-- **React Query**: Data fetching & caching
-
-### 🔧 Teknologi Backend
-- **Node.js**: Runtime environment JavaScript
-- **Express.js**: Web framework yang cepat dan minimalis
-- **MariaDB**: Database SQL yang powerful
-- **JWT**: Autentikasi dan otorisasi yang aman
-- **Socket.io**: Komunikasi real-time
-- **Multer**: Upload file handling
-
-## ⚡ Cara Menjalankan Proyek
+## Instalasi dan Pengembangan
 
 ### Prasyarat
+* Node.js v14.x atau versi terbaru
+* MariaDB
 
-- Node.js (versi 14 atau lebih baru)
-- npm atau yarn
-
-### Instalasi
-
-1. Clone repositori ini
-   ```
-   git clone https://github.com/username/TaniPintar-web.git
+### Langkah-langkah
+1. **Clone Repositori**
+   ```bash
+   git clone https://github.com/OwlDane/TaniPintar-web.git
    cd TaniPintar-web
    ```
 
-2. Install dependensi
-   ```
+2. **Instalasi Dependensi**
+   ```bash
    npm install
    ```
 
-3. Jalankan aplikasi dalam mode pengembangan
-   ```
+3. **Menjalankan Mode Pengembangan**
+   ```bash
    npm start
    ```
 
-4. Buka [http://localhost:3000](http://localhost:3000) untuk melihat aplikasi di browser
-
-### Build untuk Produksi
-
-```
-npm run build
-```
-
-Perintah ini akan membuat build aplikasi untuk produksi di folder `build`.
-
-## Kontribusi
-
-Kontribusi selalu diterima! Jika Anda ingin berkontribusi pada proyek ini, silakan fork repositori ini dan buat pull request.
+4. **Build untuk Produksi**
+   ```bash
+   npm run build
+   ```
 
 ## Lisensi
-
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
+Proyek ini didistribusikan di bawah **MIT License**.
 
 ## Kontak
+Untuk pertanyaan teknis maupun kolaborasi, silakan hubungi tim pengembang melalui [info@tanipintar.id](mailto:info@tanipintar.id).
 
-Jika Anda memiliki pertanyaan atau saran, silakan hubungi kami di info@smartfarmconnect.id.
+---

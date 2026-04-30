@@ -76,6 +76,6 @@ TaniPintar adalah platform ekosistem digital terintegrasi yang menghubungkan pet
 Proyek ini didistribusikan di bawah **MIT License**.
 
 ## Kontak
-Untuk pertanyaan teknis maupun kolaborasi, silakan hubungi tim pengembang melalui [info@tanipintar.id](mailto:info@tanipintar.id).
+Untuk pertanyaan teknis maupun kolaborasi, silakan hubungi tim pengembang melalui [tanipintar.com](mailto:tanipintar@gmail.com).
 
 ---
